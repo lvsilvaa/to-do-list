@@ -5,9 +5,12 @@
         <h1>Lista de Compras</h1>
 
         <form #listForm="ngForm" class="form-item" (ngSubmit)="adicionarItem()" >
-        <input type="text" id="item" name="item" [(ngModel)]= "item" placeholder="Adicionar item..." />
-            <button type="submit">Adicionar</button>
-             <button type="button" (click)="limparLista()">Limpar lista</button>
+        <input type="text" id="produto" name="produto" [(ngModel)]="produto" placeholder="Adicionar item..." />
+            <button type="submit" color="primary">
+
+            Adicionar</button>
+             <button color="accents" type="button"  (click)="limparLista()">
+                Limpar lista</button>
         </form>
 
         <table>
